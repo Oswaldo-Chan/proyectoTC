@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validar Campos</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <h2>Formulario de Validación</h2>
+    
+    <p>Este es un ejemplo de formulario para soporte tecnico, el cual sus campos serán validados con la librería Vanilla Validator</p>
+
+    <form class="support-form" id="support-form" novalidate>
+        <fieldset class="support-form__fieldset">
+            <legend class="support-form__legend">Información del Cliente</legend>
+
+            <div class="support-form__field">
+                <label 
+                for="support-phone" 
+                class="support-form__label"
+                >Teléfono</label>
+
+                
+                <input 
+                id="support-phone" 
+                name="support-phone" 
+                type="tel" 
+                class="support-form__input" 
+                placeholder="Ingrese su teléfono"
+                data-parsley-pattern="^\+?[0-9]{10}$"
+                data-parsley-error-message="La entrada no cumple con el formato"
+                value=""
+                >
+            </div>
+
+            <div class="support-form__field">
+                <label 
+                for="support-email" 
+                class="support-form__label"
+                >Correo</label>
+
+                
+                <input 
+                id="support-email" 
+                name="support-email" 
+                type="email" 
+                class="support-form__input" 
+                placeholder="Ingrese su correo" 
+                required data-parsley-type="email"
+                data-parsley-error-message="La entrada no cumple con el formato"
+                value=""
+                >
+            </div>
+
+            <div class="support-form__field">
+                <label 
+                for="support-problem" 
+                class="support-form__label"
+                >Problema del Producto</label>
+
+                
+                <textarea 
+                class="support-form__textarea" 
+                id="support-problem" 
+                name="support-problem" 
+                rows="5" 
+                placeholder="Describa el problema del producto"
+                required data-parsley-pattern="^.{20,30}$"
+                data-parsley-error-message="La entrada no cumple con el formato"
+                ></textarea>
+            </div>
+
+            <button class="support-form__submit" id="btn-submit" type="submit" value="Enviar">Enviar</button>
+        </fieldset>
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js" integrity="sha512-eyHL1atYNycXNXZMDndxrDhNAegH2BDWt1TmkXJPoGf1WLlNYt08CSjkqF5lnCRmdm3IrkHid8s2jOUY4NIZVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+*{
+   padding: 0;
+   margin: 0; 
+}
+body {
+    height: 100vh;
+    background: #111;
+    display: flex;
+    align-items: center;
+}
+.container {
+    width: 920px;
+    height: 280px;
+    margin: 0 auto;
+    position: relative;
+    background: linear-gradient(#e07436e3, transparent) #ffff94;
+    overflow: hidden;
+}
+.state {
+    position: fixed;
+    background-color: #371d04;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    z-index: 1;
+}
+.cloud{
+    width: 92px;
+    height: 66px;
+    position: absolute;
+    z-index: 0;
+    background: url(img/background/nube.png) no-repeat;
+    background-size: 92px 26px;
+}
+
+.cactus {
+    width: 46px;
+    height: 96px;
+    position: absolute;
+    bottom: 30px;
+    left: 600px;
+    z-index: 1;
+    background: url(img/background/cactus.png) no-repeat;
+}
+
+.tree {
+    width: 98px;
+    height: 66px;
+    bottom: 34px;
+    background: url(img/background/arbol.png) no-repeat;
+}
+
+.ground {
+    width: 200%;
+    height: 42px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: url(img/background/suelo.png) repeat-x 0px 0px;
+    background-size: 50% 42px;
+}
+.boy {
+    width: 84px;
+    height: 84px;
+    position: absolute;
+    bottom: 22px;
+    left: 55px;
+    z-index: 2;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(img/caminar/1.png);
+}
+
+.boy.walking-1 {
+    background-image: url(img/caminar/1.png);
+}
+
+.boy.walking-2 {
+    background-image: url(img/caminar/2.png);
+}
+.boy.running-1 {
+    background-image: url(img/correr/1.png);
+}
+
+.boy.running-2 {
+    background-image: url(img/correr/2.png);
+}
+
+.boy.running-3 {
+    background-image: url(img/correr/3.png);
+}
+
+.boy.running-4 {
+    background-image: url(img/correr/4.png);
+}
+
+.boy.flying-1 {
+    background-image: url(img/volar/1.png);
+}
+
+.boy.flying-2 {
+    background-image: url(img/volar/2.png);
+}
+
+.boy.flying-3 {
+    background-image: url(img/volar/3.png);
+}
+
+.boy.flying-4 {
+    background-image: url(img/volar/4.png);
+}
+
+.boy.flying-5 {
+    background-image: url(img/volar/5.png);
+}

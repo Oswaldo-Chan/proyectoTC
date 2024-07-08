@@ -1,0 +1,92 @@
+body {
+background-color: #0d1117;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+h2, p {
+    color: #ffffff;
+    text-align: center;
+}
+h2 {
+    font-size: 35px;
+}
+.support-form__fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    align-items: center;
+}
+.support-form__legend {
+    color: #ffffff;
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+}
+.support-form__field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.support-form__label {
+    color: #ffffff;
+    margin: 5px 0px 5px 10px;
+}
+.support-form__input,
+.support-form__textarea {
+    border: none;
+    background-color: #30343a;
+    padding: 10px 15px;
+    border-radius: 15px;   
+    color: white; 
+    resize: none;
+}
+.support-form__input::placeholder,
+.support-form__textarea::placeholder  {
+    color: #a7a7a7;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.support-form__input:focus,
+.support-form__textarea:focus {
+    outline: none;
+    box-shadow: none;
+}
+.support-form__submit {
+    color: #d6d6d6;
+    border: none;
+    background-color: #24416d;
+    padding: 6px 15px;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 100px;
+}
+.support-form__submit:hover {
+    cursor: pointer;
+    background-color: #3865b4;
+    color: #ffffff;
+    transition: all 500ms ease;
+}
+.parsley-errors-list {
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 20px;
+}
+.parsley-custom-error-message {
+    padding: 7px 7px 7px 0;
+    list-style: none;
+    background-color: #532129;
+    color: rgb(233, 112, 112);
+    border-left: 5px solid rgb(233, 112, 112);
+    padding-left: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+@media (min-width: 1032px) {
+    .support-form__field {
+        width: 1000px;
+    }
+}
